@@ -29,7 +29,7 @@ House-Price-Prediction/
 ├── House_price_prediction.ipynb
 ├── house_price_model.pkl
 ├── README.md
-└── images/
+└── Images/
     ├── fig1_price_dist.png
     ├── fig2_heatmap.png
     ├── fig3_scatter.png
@@ -101,7 +101,7 @@ yr_built, yr_renovated, street, city, statezip, country
 
 ### Price Distribution (Raw vs Log)
 
-![Price Distribution](images/fig1_price_dist.png)
+![Price Distribution](Images/fig1_price_dist.png)
 
 The original price distribution is highly right-skewed. Log transformation produces a near-normal target suitable for regression.
 
@@ -111,7 +111,7 @@ The original price distribution is highly right-skewed. Log transformation produ
 
 ### Feature Correlation Heatmap
 
-![Correlation Heatmap](images/fig2_heatmap.png)
+![Correlation Heatmap](Images/fig2_heatmap.png)
 
 The heatmap reveals strong relationships among area-related variables and highlights important predictors.
 
@@ -119,7 +119,7 @@ The heatmap reveals strong relationships among area-related variables and highli
 
 ## 3. Living Area vs Price
 
-![Living Area vs Price](images/fig3_scatter.png)
+![Living Area vs Price](Images/fig3_scatter.png)
 
 Log transformation creates a much stronger linear relationship between living area and price.
 
@@ -127,7 +127,7 @@ Log transformation creates a much stronger linear relationship between living ar
 
 ## 4. Condition & Waterfront Analysis
 
-![Condition and Waterfront](images/fig4_cat_price.png)
+![Condition and Waterfront](Images/fig4_cat_price.png)
 
 Waterfront homes consistently achieve higher sale prices than non-waterfront properties.
 
@@ -135,7 +135,7 @@ Waterfront homes consistently achieve higher sale prices than non-waterfront pro
 
 ## 5. Top Cities by Median Price
 
-![City Analysis](images/fig5_city_price.png)
+![City Analysis](Images/fig5_city_price.png)
 
 Location is one of the strongest determinants of housing value.
 
@@ -143,7 +143,7 @@ Location is one of the strongest determinants of housing value.
 
 ## 6. View Score Impact
 
-![View Score](images/fig6_view_price.png)
+![View Score](Images/fig6_view_price.png)
 
 Properties with better views command significantly higher prices.
 
@@ -151,7 +151,7 @@ Properties with better views command significantly higher prices.
 
 ## 7. House Age vs Price
 
-![House Age Analysis](images/fig7_age_price.png)
+![House Age Analysis](Images/fig7_age_price.png)
 
 Age alone has limited predictive power compared with size and location features.
 
@@ -159,7 +159,7 @@ Age alone has limited predictive power compared with size and location features.
 
 ## 8. Seasonal Trends
 
-![Seasonality](images/fig8_seasonality.png)
+![Seasonality](Images/fig8_seasonality.png)
 
 Seasonality exists but is weaker than structural and location-based factors.
 
@@ -236,7 +236,7 @@ Three regression algorithms were trained and evaluated.
 
 🏆 Best Model: Gradient Boosting Regressor
 
-![Model Comparison](images/fig11_comparison.png)
+![Model Comparison](Images/fig11_comparison.png)
 
 The model explains approximately 72.3% of the variance in housing prices while achieving the lowest prediction error.
 
@@ -248,7 +248,7 @@ The model explains approximately 72.3% of the variance in housing prices while a
 
 ## Actual vs Predicted Prices
 
-![Actual vs Predicted](images/fig9_actual_pred.png)
+![Actual vs Predicted](Images/fig9_actual_pred.png)
 
 This visualization compares actual house prices against model predictions for all three regression models.
 
@@ -270,7 +270,7 @@ Gradient Boosting demonstrates the strongest predictive capability, providing mo
 
 ## Residual Plots for All Models
 
-![Residual Analysis](images/fig10_residuals.png)
+![Residual Analysis](Images/fig10_residuals.png)
 
 Residuals represent the difference between actual and predicted house prices.
 
@@ -298,7 +298,7 @@ Gradient Boosting produces the most stable error distribution, supporting its su
 
 # 🎯 Feature Importance
 
-![Feature Importance](images/fig12_feature_imp.png)
+![Feature Importance](Images/fig12_feature_imp.png)
 
 Top contributors:
 
@@ -313,7 +313,7 @@ Top contributors:
 
 # 📉 Residual Distribution & Q-Q Plot
 
-![Residual Distribution](images/fig13_resid_dist.png)
+![Residual Distribution](Images/fig13_resid_dist.png)
 
 The residual histogram shows that most prediction errors are centered around zero, indicating minimal model bias. The Q-Q plot closely follows the reference line, suggesting that residuals are approximately normally distributed. Minor deviations at the tails indicate a small number of extreme housing prices that are more difficult to predict accurately.
 
