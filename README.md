@@ -9,19 +9,19 @@ Predict residential property prices using advanced machine learning techniques o
 
 ---
 
-# 📌 Project Highlights
+# Project Highlights
 
-✔ Real-world housing dataset  
-✔ Comprehensive EDA with 13 visualizations  
-✔ Feature engineering & preprocessing  
-✔ Multiple regression models compared  
-✔ Model persistence using Pickle  
-✔ Feature importance analysis  
-✔ End-to-end ML workflow  
+ Real-world housing dataset  
+ Comprehensive EDA with 13 visualizations  
+ Feature engineering & preprocessing  
+ Multiple regression models compared  
+ Model persistence using Pickle  
+ Feature importance analysis  
+ End-to-end ML workflow  
 
 ---
 
-# 📂 Repository Structure
+# Repository Structure
 
 ```text
 House-Price-Prediction/
@@ -47,7 +47,7 @@ House-Price-Prediction/
 
 ---
 
-# 📊 Dataset Information
+# Dataset Information
 
 **Dataset:** King County House Sales Dataset
 
@@ -65,7 +65,7 @@ yr_built, yr_renovated, street, city, statezip, country
 
 ---
 
-# 🧹 Data Cleaning
+# Data Cleaning
 
 - Removed invalid records where price = 0
 - Parsed date into sale_year and sale_month
@@ -76,7 +76,7 @@ yr_built, yr_renovated, street, city, statezip, country
 
 ---
 
-# ⚙️ Feature Engineering
+# Feature Engineering
 
 
 | Feature | Description |
@@ -95,7 +95,7 @@ yr_built, yr_renovated, street, city, statezip, country
 
 ---
 
-# 🔍 Exploratory Data Analysis
+# Exploratory Data Analysis
 
 ## 1. Target Variable Distribution
 
@@ -165,7 +165,7 @@ Seasonality exists but is weaker than structural and location-based factors.
 
 ---
 
-# 📌 Key Findings
+# Key Findings
 
 ## Target Variable
 
@@ -208,7 +208,7 @@ Seasonality exists but is weaker than structural and location-based factors.
 
 ---
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 
 Three regression algorithms were trained and evaluated.
 
@@ -220,13 +220,13 @@ Three regression algorithms were trained and evaluated.
 - Ensemble tree-based model
 - Handles nonlinear relationships
 
-### 3. Gradient Boosting Regressor ⭐
+### 3. Gradient Boosting Regressor 
 - Sequential boosting approach
 - Best overall predictive performance
 
 ---
 
-# 📊 Model Performance
+# Model Performance
 
 | Model | RMSE ($) | MAE ($) | R² |
 |---------|---------:|---------:|---------:|
@@ -234,7 +234,7 @@ Three regression algorithms were trained and evaluated.
 | Random Forest | 223,073 | 111,533 | 0.6655 |
 | **Gradient Boosting** | **202,924** | **100,290** | **0.7232** |
 
-🏆 Best Model: Gradient Boosting Regressor
+ Best Model: Gradient Boosting Regressor
 
 ![Model Comparison](Images/fig11_comparison.png)
 
@@ -244,7 +244,7 @@ The model explains approximately 72.3% of the variance in housing prices while a
 
 ---
 
-# 🎯 Prediction Performance
+# Prediction Performance
 
 ## Actual vs Predicted Prices
 
@@ -266,7 +266,7 @@ Gradient Boosting demonstrates the strongest predictive capability, providing mo
 
 ---
 
-# 📉 Residual Analysis
+# Residual Analysis
 
 ## Residual Plots for All Models
 
@@ -296,7 +296,7 @@ Residuals represent the difference between actual and predicted house prices.
 Gradient Boosting produces the most stable error distribution, supporting its superior RMSE, MAE, and R² performance.
 
 
-# 🎯 Feature Importance
+# Feature Importance
 
 ![Feature Importance](Images/fig12_feature_imp.png)
 
@@ -311,7 +311,7 @@ Top contributors:
 
 ---
 
-# 📉 Residual Distribution & Q-Q Plot
+# Residual Distribution & Q-Q Plot
 
 ![Residual Distribution](Images/fig13_resid_dist.png)
 
@@ -321,7 +321,7 @@ The residual histogram shows that most prediction errors are centered around zer
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Clone Repository
 
@@ -345,7 +345,7 @@ jupyter notebook House_price_prediction.ipynb
 
 ---
 
-## 💾 Load Saved Model
+## Load Saved Model
 
 ```python
 import joblib
@@ -355,7 +355,7 @@ model = joblib.load("house_price_model.pkl")
 
 ---
 
-## 🏆 Project Outcome
+## Project Outcome
 
 This project demonstrates how careful preprocessing, feature engineering, and model selection can significantly improve predictive performance on real-world housing data.
 
@@ -363,7 +363,7 @@ The strongest lesson from this analysis is that feature engineering and location
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 **Adnan Rahman**  
 
